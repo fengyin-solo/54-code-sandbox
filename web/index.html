@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代码沙箱管理系统</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>代码沙箱管理系统</h1>
+  <div class="stats-container">
+    <h2>统计概览</h2>
+    <div id="stats" class="stats-grid"></div>
+  </div>
+  <div class="table-container">
+    <h2>执行任务列表</h2>
+    <table id="list">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>沙箱ID</th>
+          <th>语言</th>
+          <th>状态</th>
+          <th>退出码</th>
+          <th>耗时(ms)</th>
+          <th>创建时间</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="table-container">
+    <h2>沙箱列表</h2>
+    <table id="sandbox-list">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>名称</th>
+          <th>语言</th>
+          <th>镜像</th>
+          <th>状态</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
